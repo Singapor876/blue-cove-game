@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blue Cove Fishing Town Online</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <canvas id="scene" aria-label="Blue Cove 3D game scene"></canvas>
+
+      <section class="hud panel top-left" aria-label="Game status">
+        <div class="title-row">
+          <div>
+            <p class="eyebrow">Blue Cove Online</p>
+            <h1>Fishing Town</h1>
+          </div>
+          <span id="onlineBadge" class="badge offline">Offline</span>
+        </div>
+        <p id="modeText" class="status-line">Explore the bay</p>
+        <p id="onlineText" class="status-line">Multiplayer room is optional</p>
+      </section>
+
+      <section class="hud panel top-right" aria-label="Current objective">
+        <p id="timeText">Day 1 08:00</p>
+        <p id="zoneText">Dock</p>
+        <p id="hintText">Stand near water and press F to fish</p>
+      </section>
+
+      <section class="hud panel inventory-panel" aria-label="Inventory">
+        <div id="inventory" class="inventory"></div>
+      </section>
+
+      <section class="hud panel action-panel" aria-label="Quick actions">
+        <button id="fishBtn" type="button">Fish</button>
+        <button id="buildBtn" type="button">Build</button>
+        <button id="interactBtn" type="button">Talk</button>
+        <button id="onlineBtn" type="button">Online</button>
+      </section>
+
+      <section id="modal" class="modal hidden" aria-live="polite">
+        <div class="modal-card">
+          <button id="closeModal" class="icon-button" type="button" aria-label="Close">x</button>
+          <h2 id="modalTitle"></h2>
+          <div id="modalBody"></div>
+        </div>
+      </section>
+
+      <section id="startPanel" class="start-panel">
+        <div class="start-copy">
+          <p class="eyebrow">Every resource comes from fishing</p>
+          <h2>
+            <span>Blue Cove</span>
+            <span>Fishing Town</span>
+            <span>Online</span>
+          </h2>
+          <p>
+            Fish up wood, stone, shells, coral, and pearls. Build a hut and a cottage,
+            adopt pets in the garden, talk with townsfolk, study blueprints, play
+            volleyball, and sync players through a WebSocket room.
+          </p>
+          <button id="startBtn" type="button">Enter Town</button>
+        </div>
+      </section>
+
+      <div id="notice" class="notice"></div>
+    </main>
+
+    <script src="https://cdn.babylonjs.com/babylon.js"></script>
+    <script src="https://cdn.babylonjs.com/loaders/babylonjs.loaders.min.js"></script>
+    <script src="./game.js"></script>
+  </body>
+</html>

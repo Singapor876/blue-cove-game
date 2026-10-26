@@ -1,0 +1,152 @@
+{
+  "version": 1,
+  "units": "1 Babylon unit = 1 meter",
+  "root": "./assets/models/",
+  "assets": {
+    "terrain.dreamBay": {
+      "file": "environment/dream_bay_terrain.glb",
+      "kind": "environment",
+      "fallback": "terrain",
+      "scale": [1, 1, 1],
+      "position": [0, 0, 0],
+      "receivesShadows": true,
+      "collidable": true
+    },
+    "water.stylizedBay": {
+      "file": "environment/stylized_water_plane.glb",
+      "kind": "environment",
+      "fallback": "water",
+      "scale": [1, 1, 1],
+      "position": [0, -0.08, 0],
+      "receivesShadows": false,
+      "collidable": false
+    },
+    "building.tavern": {
+      "file": "buildings/seaside_tavern.glb",
+      "kind": "building",
+      "fallback": "house",
+      "scale": [1, 1, 1],
+      "position": [8, 0, 2],
+      "label": "Tavern",
+      "collidable": true
+    },
+    "building.study": {
+      "file": "buildings/study_room.glb",
+      "kind": "building",
+      "fallback": "house",
+      "scale": [1, 1, 1],
+      "position": [2, 0, -8],
+      "label": "Study",
+      "collidable": true
+    },
+    "building.home": {
+      "file": "buildings/player_cottage.glb",
+      "kind": "building",
+      "fallback": "house",
+      "scale": [1, 1, 1],
+      "position": [-8, 0, 1],
+      "label": "Home",
+      "collidable": true
+    },
+    "building.hut": {
+      "file": "buildings/buildable_hut.glb",
+      "kind": "buildable",
+      "fallback": "buildHouse",
+      "scale": [1, 1, 1],
+      "collidable": true
+    },
+    "building.cottage": {
+      "file": "buildings/buildable_cottage.glb",
+      "kind": "buildable",
+      "fallback": "buildHouse",
+      "scale": [1, 1, 1],
+      "collidable": true
+    },
+    "building.lamp": {
+      "file": "props/buildable_lamp.glb",
+      "kind": "buildable",
+      "fallback": "lamp",
+      "scale": [1, 1, 1],
+      "collidable": true
+    },
+    "building.planter": {
+      "file": "props/buildable_planter.glb",
+      "kind": "buildable",
+      "fallback": "planter",
+      "scale": [1, 1, 1],
+      "collidable": true
+    },
+    "prop.dock": {
+      "file": "props/fantasy_fishing_dock.glb",
+      "kind": "prop",
+      "fallback": "dock",
+      "scale": [1, 1, 1],
+      "position": [-4.5, 0, 13.8],
+      "collidable": true
+    },
+    "prop.volley": {
+      "file": "props/volleyball_set.glb",
+      "kind": "prop",
+      "fallback": "volley",
+      "scale": [1, 1, 1],
+      "position": [11, 0, -7],
+      "collidable": true
+    },
+    "prop.garden": {
+      "file": "props/pet_garden_gate.glb",
+      "kind": "prop",
+      "fallback": "garden",
+      "scale": [1, 1, 1],
+      "position": [-10, 0, -7],
+      "collidable": false
+    },
+    "foliage.treeA": {
+      "file": "foliage/fantasy_tree_a.glb",
+      "kind": "foliage",
+      "fallback": "tree",
+      "scale": [1, 1, 1],
+      "collidable": true
+    },
+    "foliage.flowerCluster": {
+      "file": "foliage/flower_grass_cluster.glb",
+      "kind": "foliage",
+      "fallback": "flowers",
+      "scale": [1, 1, 1],
+      "collidable": false
+    },
+    "character.player": {
+      "file": "characters/player_base_character.glb",
+      "kind": "character",
+      "fallback": "character",
+      "scale": [1, 1, 1],
+      "collidable": true,
+      "animations": ["idle", "run", "fish_cast", "fish_reel"]
+    },
+    "character.npcMayor": {
+      "file": "characters/npc_mayor.glb",
+      "kind": "character",
+      "fallback": "character",
+      "scale": [1, 1, 1],
+      "position": [-1, 0, 1.8],
+      "label": "Mayor",
+      "collidable": true
+    },
+    "character.npcTavern": {
+      "file": "characters/npc_tavern_owner.glb",
+      "kind": "character",
+      "fallback": "character",
+      "scale": [1, 1, 1],
+      "position": [6.4, 0, 3.4],
+      "label": "Otto",
+      "collidable": true
+    },
+    "pet.saltPuff": {
+      "file": "pets/pet_salt_puff.glb",
+      "kind": "pet",
+      "fallback": "pet",
+      "scale": [1, 1, 1],
+      "collidable": false,
+      "animations": ["idle", "follow", "happy"]
+    }
+  }
+}
